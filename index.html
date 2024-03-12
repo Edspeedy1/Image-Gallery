@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Website</title>
+    <link rel="icon" href="icon.png">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0c1421;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20vh;
+        }
+
+        .buttons button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 10px;
+            background-color: #262f40;
+            color: #fff;
+            border: 2px solid #6ceeff;
+            font-size: 40px;
+            cursor: pointer;
+            margin-bottom: 2%;
+        }
+
+        #top {
+            padding-top: 15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #allButton {
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 10px;
+            background-color: #262f40;
+            color: #fff;
+            border: 2px solid #6ceeff;
+            font-size: 120px;
+            cursor: pointer;
+        }
+
+        #searchUpload {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #search {
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            font-size: 20px;
+            width: 40%;
+        }
+
+        #file {
+            display: inline-block;
+            background-color: rgb(14, 11, 79);
+            border: 2px solid #6ceeff88;
+            color: white;
+            padding: 0.5rem;
+            font-family: sans-serif;
+            border-radius: 0.3rem;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+
+        #file::-webkit-file-upload-button {
+            visibility: hidden;
+        }
+
+        #suggestions {
+            width: 160px;
+            max-height: 75px;
+            background-color: #37506e;
+            list-style-type: none;
+            padding-left: 10px;
+        }
+
+        #suggestions li {
+            cursor: pointer;
+            color: #6ceeff;
+            overflow: hidden;
+            /* word wrap false */
+            white-space: nowrap;
+        }
+
+        li p {
+            margin: 0;
+            padding: 0;
+            color: #6ceeff;
+        }
+
+        .selected {
+            border: #6ceeff 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="top">
+        <button id="allButton">ALL</button>
+        <div class="buttons">
+            <button id="randomButton">Random</button>
+            <button id="lastPage">last page</button>
+        </div>
+    </div>
+    <form id="uploadForm" enctype="multipart/form-data" autocomplete="off">
+        <div id="searchUpload">
+            <input type="text" id="search">
+            <ul id="suggestions"></ul>
+            <ul id="myList" hidden></ul>
+            <div id="drop-zone"
+                style="border: 2px dashed rgb(91, 134, 132); padding: 20px; background-color: #0a1f46; margin-top: 20px;">
+                <p style="color: #cde6e9;">Drag and drop images or videos here</p>
+            </div>
+            <input type="file" accept="image/*,video/*" id="file" name="file">
+            <script src="drag&dropIndex.js"></script>
+        </div>
+    </form>
+    <!-- style it at the bottom of the page -->
+    <p style="position: fixed; bottom: 0;">{s:score, w:width, h:height, t:time, c:tag count, r:random}</p>
+    <script src="index.js"></script>
+</body>
+
+</html>

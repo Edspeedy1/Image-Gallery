@@ -1,0 +1,73 @@
+body {
+    margin-left: 250px;
+    padding: 0;
+    background-color: #0c1421;
+}
+h1 {
+    color: aliceblue;
+    margin: 0px;
+    font-size: small;
+}
+ul {
+    padding-left: 10px;    
+    list-style: outside;
+}
+
+li {
+    margin-bottom: 5px;
+    color: aliceblue;
+}
+
+h2 {
+    color: aliceblue;
+    font-size: medium;
+}
+
+#pictureContainer {
+    width: 90vw - 200px;
+    height: 99vh;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+}
+
+#pictureContainer * {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+#sideBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #162136;
+    padding: 20px;
+}
+
+#tagList {
+    width: 100%;
+}
+
+.tagInput {
+    width: 90%;
+    height: auto;
+    min-height: 0px;
+    resize: none;
+    padding: 5px;
+    padding-bottom: 0;
+}
+
+#saveButton {
+    margin: 10px;
+}
+
+#deleteButton{
+    position: fixed;
+    margin: 10px;
+    right: 0px;
+    bottom: 50px;
+    font-size: 15px;
+}

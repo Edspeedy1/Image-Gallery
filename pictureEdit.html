@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="icon.png">
+        <title>My Website</title>
+        <link rel="stylesheet" href="pictureEdit.css">
+    </head>
+    <body>
+        <div id="sideBar">
+            <a style="margin: 0px 10px 20px 10px; color: rgb(66, 148, 214); font-size: 50px;" href="index.html">Home</a>
+            <div style="display: flex; justify-content: space-between;">
+                <h2>Score: </h2>
+                <input id="scoreCounter" type="number" max="100" id="scoreInput" style="height: fit-content; width: 50px; margin-top: 10px;">
+            </div>
+            <textarea id="0Input" class="tagInput"></textarea>
+            <textarea id="1Input" class="tagInput"></textarea>
+            <textarea id="2Input" class="tagInput"></textarea>
+            <textarea id="generalInput" class="tagInput"></textarea>
+            <div>
+                <button id="saveButton">upload</button>
+                <button id="doneButton">done</button>
+            </div>
+            <button id="folderButton">open</button>
+            
+        </div>
+        <div id="pictureContainer">
+            <img src="" alt="Random Picture">
+        </div>
+        <button id="deleteButton"> delete</button>
+        <script src="pictureEdit.js"></script>
+
+    </body>
+</html>

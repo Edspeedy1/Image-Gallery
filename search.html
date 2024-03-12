@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website</title>
+        <link rel="stylesheet" href="search.css">
+        <link rel="icon" href="icon.png">
+    </head>
+    <body>
+        <div id="sideBar">
+            <a style="margin: 0px 10px 20px 10px; color: rgb(66, 148, 214); font-size: 50px;" href="index.html">Home</a>
+            <div id="awesomplete">
+                <input name="tags" type="text" id="searchBar">
+                <ul id="suggestions"></ul>
+                <ul id="myList" hidden></ul>
+            </div>
+        </div>
+        <div id="pictureGridContainer">
+        </div>
+        <button id="nextPage">-></button>
+        <button id="prevPage"><- </button>
+        <script src="search.js"></script>
+    </body>
+</html>

@@ -1,0 +1,170 @@
+body {
+    margin-left: 250px;
+    padding: 0;
+    background-color: #0c1421;
+}
+
+ul {
+    padding-left: 10px;    
+    list-style: outside;
+}
+
+li {
+    margin-bottom: 1px;
+    color: rgb(168, 245, 255);
+}
+a.generalTag{
+    color: #6ceeff;
+}
+a.t2{
+    color: #a83b08;
+}
+a.t1{
+    color: #0ea700;
+}
+a.t0{
+    color: #9622b9;
+}
+a {
+    text-decoration: none;
+}
+
+#home{
+    padding-top: 20px;
+    margin-left: 50px;
+    color: rgb(66, 148, 214); 
+    font-size: 50px;
+}
+
+
+.out#pictureContainer {
+    width: 87vw;
+    left: 240px;
+}
+.in#pictureContainer {
+    width: 100%;
+}
+#pictureContainer {
+    position: fixed;
+    transition: 0.5s;
+    height: 99vh;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+}
+
+#pictureContainer * {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+.out{left: -250px;}
+.in{left: 0px;}
+#sideBar {
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: fit-content;
+    background-color: #162136;
+    padding: 20px;
+    transition: 0.5s;
+}
+
+#searchBar {
+    margin-top: 30px;
+    width: 100%;
+}
+
+#tagList {
+    width: 100%;
+}
+
+#tagInput {
+    margin-top: 10px;
+    width: 90%;
+    height: auto;
+    min-height: 0px;
+    resize: none;
+    padding: 10px;
+    overflow-y: hidden;
+}
+
+#saveButton {
+    margin: 10px;
+}
+
+#hide-show-Button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    color: #6ceeff;
+    cursor: pointer;
+    background-color: #0c1421;
+    border: 2px solid #6ceeff;
+    border-radius: 15px;
+}
+#backButton {
+    position: absolute;
+    top: 55px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    color: #6ceeff;
+    cursor: pointer;
+    background-color: #0c1421;
+    border: 2px solid #6ceeff;
+    border-radius: 15px;
+}
+
+#nextPicture {
+    position: fixed;
+    bottom: 15px;
+    width: 80px;
+    right: 10px;
+    height: 40px;
+    font-size: 30px;
+    color: #6ceeff;
+    cursor: pointer;
+    background-color: #0c1421;
+    border: 2px solid #6ceeff;
+    border-radius: 15px;
+}
+
+.out#previousPicture {
+    left: 240px;
+}
+.in#previousPicture {
+    left: 10px;
+}
+#previousPicture {
+    transition: 0.5s;
+    position: fixed;
+    bottom: 15px;
+    width: 80px;
+    height: 40px;
+    font-size: 30px;
+    color: #6ceeff;
+    cursor: pointer;
+    background-color: #0c1421;
+    border: 2px solid #6ceeff;
+    border-radius: 15px;
+}
+
+.pauseButton{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: 900;
+    color: #6ceeff;
+    cursor: pointer;
+    background-color: #0c1421;
+    border: 2px solid #6ceeff;
+    border-radius: 15px;
+}
